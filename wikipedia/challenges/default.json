@@ -198,3 +198,11 @@
       {{ rally.collect(parts="common/ingest-search-autoscale-schedule.json") }}
     ]
   }
+  {
+  "name": "search-pre-indexed",
+  "description": "Benchmark search queries on pre-indexed data",
+  "default": false,
+  "schedule": [
+  {{ rally.collect(parts="common/search-pre-indexed-schedule.json") }}
+  ]
+  }
