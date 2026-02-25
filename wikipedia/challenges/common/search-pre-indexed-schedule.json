@@ -1,38 +1,4 @@
 {
-  "name": "delete-index",
-  "operation": "delete-index"
-},
-{
-  "name": "create-index",
-  "operation": "create-index"
-},
-{
-  "name": "check-cluster-health",
-  "operation": "check-cluster-health"
-},
-{
-  "name": "initial-documents-indexing",
-  "operation": "initial-documents-indexing",
-  "warmup-time-period": {{ initial_indexing_bulk_warmup_time_period | default(40) | int }},
-  "clients": {{ initial_indexing_bulk_clients | default(5) | int }}
-},
-{
-  "name": "refresh-after-index",
-  "operation": "refresh-after-index"
-},
-{
-  "name": "force-merge",
-  "operation": "force-merge"
-},
-{
-  "name": "refresh-after-force-merge",
-  "operation": "refresh-after-force-merge"
-},
-{
-  "name": "wait-until-merges-finish-after-index",
-  "operation": "wait-until-merges-finish-after-index"
-},
-{
   "name": "standalone-query-string-search",
   "operation": "query-string-search",
   "clients": {{ standalone_search_clients | default(20) | int }},
